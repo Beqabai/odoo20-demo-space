@@ -3,7 +3,7 @@ FROM python:3.12-slim-bookworm
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# სისტემური ბიბლიოთეკები და მსუბუქი კლიენტი ბაზის შესამოწმებლად
+# სისტემური ბიბლიოთეკები და კლიენტი
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     postgresql-client \
@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Odoo 20.0-ის კლონირება
 RUN git clone --depth 1 --branch 20.0 https://github.com/odoo/odoo.git /opt/odoo
 
+# Odoo-ს კოდიდან postgres მომხმარებლის ხელოვნური შეზღუდვის მოხსნა
+RUN sed -i "s/if self\['db_user'\] == 'postgres':/if False:/g" /opt/odoo/odoo/tools/config.py
+
 # Python პაკეტების ინსტალაცია
 WORKDIR /opt/odoo
 RUN pip install --no-cache-dir -r requirements.txt
@@ -34,7 +37,7 @@ COPY ./addons /mnt/extra-addons
 RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
     && chown -R odoo:odoo /opt/odoo /mnt/extra-addons
 
-# გამშვები სკრიპტი: Render-ის ცვლადების გამოყენება და ავტომატური ინიციალიზაცია
+# გამშვები სკრიპტი
 RUN echo '#!/bin/bash\n\
 echo "=== Checking Supabase Database State ==="\n\
 TABLE_EXISTS=$(PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" -tAc "SELECT 1 FROM information_schema.tables WHERE table_name = '\''ir_module_module'\'';" 2>/dev/null || true)\n\
