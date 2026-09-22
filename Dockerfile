@@ -1,6 +1,6 @@
 FROM python:3.12-slim-bookworm
 
-# სისტემური დამოკიდებულებების და Git-ის ინსტალაცია
+# სისტემური ბიბლიოთეკების დამოკიდებულებები
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     build-essential \
@@ -15,10 +15,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wkhtmltopdf \
     && rm -rf /var/lib/apt/lists/*
 
-# ოფიციალური Odoo-ს კლონირება პირდაპირ 20.0 ბრენჩიდან
+# Odoo 20.0-ის კლონირება ოფიციალური რეპოზიტორიიდან
 RUN git clone --depth 1 --branch 20.0 https://github.com/odoo/odoo.git /opt/odoo
 
-# Odoo-ს პითონის პაკეტების ინსტალაცია
+# Python პაკეტების ინსტალაცია
 WORKDIR /opt/odoo
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -26,11 +26,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN mkdir -p /mnt/extra-addons
 COPY ./addons /mnt/extra-addons
 
-# სისტემური მომხმარებელი უსაფრთხოებისთვის
+# სისტემური მომხმარებლის შექმნა და უფლებების მინიჭება
 RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
     && chown -R odoo:odoo /opt/odoo /mnt/extra-addons
 
 USER odoo
 
-# გაშვება ოფიციალური odoo-bin ფაილით და თქვენი მოდულების მიბმით
-CMD ["python3", "/opt/odoo/odoo-bin", "--http-port=10000", "--addons-path=/opt/odoo/addons,/mnt/extra-addons"]
+# გაშვება შევსებული ბაზის პარამეტრებით და Render-ის პორტზე (10000)
+CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-port=10000 --db_host=db.hyfcefsvjnjmuxofmwfv.supabase.co --db_port=5432 --db_user=postgres --db_password=$PASSWORD -d postgres --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
