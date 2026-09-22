@@ -32,5 +32,5 @@ RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
 
 USER odoo
 
-# გაშვება შევსებული ბაზის პარამეტრებით და Render-ის პორტზე (10000)
-CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-port=10000 --db_host=db.hyfcefsvjnjmuxofmwfv.supabase.co --db_port=5432 --db_user=postgres --db_password=$PASSWORD -d postgres --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
+# გაშვება dev რეჟიმით, Supabase-ის მონაცემებით და 10000 პორტზე
+CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --dev=all --http-port=10000 --db_host=db.hyfcefsvjnjmuxofmwfv.supabase.co --db_port=5432 --db_user=postgres --db_password=$PASSWORD -d postgres --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
