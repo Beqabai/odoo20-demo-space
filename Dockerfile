@@ -1,4 +1,4 @@
-FROM odoobot/odoo:20.0
+FROM odoobot/odoo:19.4
 
 USER root
 
@@ -11,5 +11,5 @@ RUN chown -R odoo:odoo /mnt/extra-addons
 
 USER odoo
 
-# ვუშვებთ Odoo 20-ს Render-ის პორტზე (10000) სწორი გამშვები ფაილით და Supabase-ის პარამეტრებით
-CMD ["odoo-bin", "--http-port=10000", "--addons-path=/usr/lib/python3/dist-packages/odoo/addons,/mnt/extra-addons", "--db_host=db.hyfcefsvjnmuxofmwfv.supabase.co", "--db_user=postgres", "--db_port=5432"]
+# ვუშვებთ Odoo 19.4-ს Render-ის პორტზე (10000) და ავტომატურად ვაკავშირებთ Supabase-ს
+CMD ["python3", "/usr/bin/odoo", "--http-port=10000", "--addons-path=/usr/lib/python3/dist-packages/odoo/addons,/mnt/extra-addons", "--db_host=db.hyfcefsvjnmuxofmwfv.supabase.co", "--db_user=postgres", "--db_port=5432"]
