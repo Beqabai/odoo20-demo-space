@@ -1,6 +1,6 @@
 FROM python:3.12-slim-bookworm
 
-# სისტემური ბიბლიოთეკების დამოკიდებულებები
+# სისტემური ბიბლიოთეკები
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     build-essential \
@@ -21,19 +21,19 @@ RUN git clone --depth 1 --branch 20.0 https://github.com/odoo/odoo.git /opt/odoo
 # postgres იუზერის უსაფრთხოების ბლოკის გათიშვა
 RUN sed -i "s/if db_user == 'postgres':/if False:/g" /opt/odoo/odoo/tools/config.py || true
 
-# Python პაკეტების ინსტალაცია
+# პითონის დამოკიდებულებები
 WORKDIR /opt/odoo
 RUN pip install --no-cache-dir -r requirements.txt
 
-# მოდულების საქაღალდის შექმნა და კოდის გადმოტანა
+# ადსონების საქაღალდე
 RUN mkdir -p /mnt/extra-addons
 COPY ./addons /mnt/extra-addons
 
-# სისტემური მომხმარებლის შექმნა და უფლებების მინიჭება
+# მომხმარებელი
 RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
     && chown -R odoo:odoo /opt/odoo /mnt/extra-addons
 
 USER odoo
 
-# გაშვება Supabase-ის მონაცემებით
-CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-port=10000 --db_host=db.hyfcefsvjnjmuxofmwfv.supabase.co --db_port=5432 --db_user=postgres --db_password=$PASSWORD -d postgres --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
+# გაშვება log-level=debug-ით (რომ ზუსტი მიზეზი გამოჩნდეს)
+CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-port=10000 --log-level=debug --db_host=db.hyfcefsvjnjmuxofmwfv.supabase.co --db_port=5432 --db_user=postgres --db_password=$PASSWORD -d postgres --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
