@@ -6,7 +6,7 @@ Insert and edit draw.io diagrams directly from Odoo HTML widgets.
 Type /diagrams in the editor to open the embedded draw.io interface.
 The diagram is stored in the HTML content itself (XML + SVG preview).
     """,
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "category": "Productivity",
     "author": "Dainier Escalona",
     "maintainer": "Dainier Escalona",
