@@ -32,5 +32,5 @@ RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
 
 USER odoo
 
-# გაშვება Odoo_20 ბაზის ინიციალიზაციით
-CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-interface=0.0.0.0 --http-port=10000 --db_host=aws-0-ap-southeast-2.pooler.supabase.com --db_port=5432 --db_user=odoouser.hyfcefsvjnjmuxofmwfv --db_password=odoo12345password -d Odoo_20 -i base --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
+# გაშვება ოპტიმიზებული პარამეტრებით cron-ის გარეშე, რომ ინიციალიზაცია არ გაიჭედოს
+CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-interface=0.0.0.0 --http-port=10000 --workers=0 --max-cron-threads=0 --db_host=aws-0-ap-southeast-2.pooler.supabase.com --db_port=5432 --db_user=odoouser.hyfcefsvjnjmuxofmwfv --db_password=odoo12345password -d Odoo_20 -i base --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
