@@ -3,10 +3,9 @@ FROM python:3.12-slim-bookworm
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# სისტემური ბიბლიოთეკები და PostgreSQL
+# სისტემური ბიბლიოთეკები და მსუბუქი კლიენტი ბაზის შესამოწმებლად
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
-    postgresql \
     postgresql-client \
     build-essential \
     libldap2-dev \
@@ -35,27 +34,21 @@ COPY ./addons /mnt/extra-addons
 RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
     && chown -R odoo:odoo /opt/odoo /mnt/extra-addons
 
-# ჭკვიანი გამშვები სკრიპტი: ავტომატური ინიციალიზაცია მხოლოდ საჭიროებისას
+# გამშვები სკრიპტი: Render-ის ცვლადების გამოყენება და ავტომატური ინიციალიზაცია
 RUN echo '#!/bin/bash\n\
-sed -i "s/shared_buffers = .*/shared_buffers = 32MB/" /etc/postgresql/*/main/postgresql.conf\n\
-sed -i "s/work_mem = .*/work_mem = 4MB/" /etc/postgresql/*/main/postgresql.conf\n\
-sed -i "s/max_connections = .*/max_connections = 20/" /etc/postgresql/*/main/postgresql.conf\n\
-\n\
-service postgresql start\n\
-su - postgres -c "createuser -s odoo 2>/dev/null || true"\n\
-su - postgres -c "createdb -O odoo odoo_db 2>/dev/null || true"\n\
-\n\
-# ვამოწმებთ, არსებობს თუ არა უკვე ir_module_module ცხრილი\n\
-TABLE_EXISTS=$(su - postgres -c "psql -d odoo_db -tAc \"SELECT 1 FROM information_schema.tables WHERE table_name = '\''ir_module_module'\'';\"")\n\
+echo "=== Checking Supabase Database State ==="\n\
+TABLE_EXISTS=$(PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" -tAc "SELECT 1 FROM information_schema.tables WHERE table_name = '\''ir_module_module'\'';" 2>/dev/null || true)\n\
 \n\
 if [ "$TABLE_EXISTS" != "1" ]; then\n\
-    echo "=== Initializing database odoo_db with base module ==="\n\
-    su - odoo -c "python3 /opt/odoo/odoo-bin --workers=0 --max-cron-threads=0 -d odoo_db -i base --stop-after-init --addons-path=/opt/odoo/addons,/mnt/extra-addons"\n\
+    echo "=== Initializing database in Supabase for the first time (-i base) ==="\n\
+    python3 /opt/odoo/odoo-bin --workers=0 --max-cron-threads=0 --db_host="$DB_HOST" --db_port="$DB_PORT" --db_user="$DB_USER" --db_password="$DB_PASSWORD" -d "$DB_NAME" -i base --stop-after-init --addons-path=/opt/odoo/addons,/mnt/extra-addons\n\
 fi\n\
 \n\
 echo "=== Starting Odoo Web Server ==="\n\
-exec su - odoo -c "python3 /opt/odoo/odoo-bin --http-interface=0.0.0.0 --http-port=10000 --workers=0 --max-cron-threads=1 -d odoo_db --addons-path=/opt/odoo/addons,/mnt/extra-addons"\n\
+exec python3 /opt/odoo/odoo-bin --http-interface=0.0.0.0 --http-port=10000 --workers=0 --max-cron-threads=1 --db_host="$DB_HOST" --db_port="$DB_PORT" --db_user="$DB_USER" --db_password="$DB_PASSWORD" -d "$DB_NAME" --addons-path=/opt/odoo/addons,/mnt/extra-addons\n\
 ' > /entrypoint.sh && chmod +x /entrypoint.sh
+
+USER odoo
 
 EXPOSE 10000
 
