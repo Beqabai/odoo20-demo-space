@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wkhtmltopdf \
     && rm -rf /var/lib/apt/lists/*
 
-# Odoo 20.0-ის სუფთა კლონირება
+# Odoo 20.0-ის კლონირება
 RUN git clone --depth 1 --branch 20.0 https://github.com/odoo/odoo.git /opt/odoo
 
 # Python პაკეტების ინსტალაცია
@@ -32,5 +32,5 @@ RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
 
 USER odoo
 
-# გაშვება ap-southeast-2 Pooler-ით, odoouser როლით და 10 000 პორტით
-CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-port=10000 --db_host=aws-0-ap-southeast-2.pooler.supabase.com --db_port=5432 --db_user=odoouser.hyfcefsvjnjmuxofmwfv --db_password=odoo12345password -d postgres --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
+# გაშვება 0.0.0.0 ინტერფეისზე და ბაზის ინიციალიზაციით (-i base)
+CMD ["sh", "-c", "python3 /opt/odoo/odoo-bin --http-interface=0.0.0.0 --http-port=10000 --db_host=aws-0-ap-southeast-2.pooler.supabase.com --db_port=5432 --db_user=odoouser.hyfcefsvjnjmuxofmwfv --db_password=odoo12345password -d postgres -i base --addons-path=/opt/odoo/addons,/mnt/extra-addons"]
