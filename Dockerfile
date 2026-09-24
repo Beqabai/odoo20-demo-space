@@ -37,8 +37,11 @@ COPY ./addons /mnt/extra-addons
 RUN useradd -m -d /opt/odoo -s /bin/bash odoo \
     && chown -R odoo:odoo /opt/odoo /mnt/extra-addons
 
-# გამშვები სკრიპტი
+# გამშვები სკრიპტი: ავტომატური გასუფთავება ძველი ასეტების, რათა სტილები არ გაფუჭდეს
 RUN echo '#!/bin/bash\n\
+echo "=== Cleaning broken web assets cache ==="\n\
+PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" -c "DELETE FROM ir_attachment WHERE url LIKE '\''/web/assets/%'\'';" 2>/dev/null || true\n\
+\n\
 echo "=== Checking Supabase Database State ==="\n\
 TABLE_EXISTS=$(PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" -tAc "SELECT 1 FROM information_schema.tables WHERE table_name = '\''ir_module_module'\'';" 2>/dev/null || true)\n\
 \n\
