@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_process_root" name="Processes" sequence="45"
+              web_icon="bpmn_process_management,static/description/icon.png"
+              groups="group_process_user"/>
+    <menuitem id="menu_process_map" name="Process Map" parent="menu_process_root" sequence="10"
+              action="business_process_action_map"/>
+    <menuitem id="menu_process_all" name="All Processes" parent="menu_process_root" sequence="20"
+              action="business_process_action_all" groups="group_process_manager"/>
+    <menuitem id="menu_process_review" name="Review Queue" parent="menu_process_root" sequence="30"
+              action="business_process_element_action_review" groups="group_process_manager"/>
+    <menuitem id="menu_process_responsibilities" name="Responsibilities" parent="menu_process_root"
+              sequence="40" action="business_process_element_action_all"/>
+    <menuitem id="menu_process_import" name="Import Diagram" parent="menu_process_root" sequence="50"
+              action="business_process_import_action" groups="group_process_manager"/>
+</odoo>

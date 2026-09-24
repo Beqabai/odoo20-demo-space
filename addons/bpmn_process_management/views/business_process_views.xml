@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="business_process_view_form" model="ir.ui.view">
+        <field name="name">business.process.form</field>
+        <field name="model">business.process</field>
+        <field name="arch" type="xml">
+            <form string="Business Process">
+                <header>
+                    <button name="action_submit_review" type="object" string="Submit for Review"
+                            class="btn-primary" invisible="state != 'draft' or not is_manager"/>
+                    <button name="action_publish" type="object" string="Publish" class="btn-primary"
+                            invisible="state not in ('draft', 'review') or not is_manager"
+                            confirm="Publishing replaces the currently published version. Continue?"/>
+                    <button name="action_back_to_draft" type="object" string="Back to Draft"
+                            invisible="state != 'review' or not is_manager"/>
+                    <button name="action_new_version" type="object" string="New Version"
+                            class="btn-primary"
+                            invisible="state not in ('published', 'deprecated') or not is_manager or not is_latest_version"/>
+                    <button name="action_new_major_version" type="object" string="New Major Version"
+                            invisible="state not in ('published', 'deprecated') or not is_manager or not is_latest_version"/>
+                    <button name="action_deprecate" type="object" string="Deprecate"
+                            invisible="state != 'published' or not is_manager"/>
+                    <button name="action_open_import" type="object" string="Import Diagram"
+                            invisible="state != 'draft' or not is_manager"/>
+                    <button name="action_match_responsibles" type="object" string="Match Lanes"
+                            invisible="state != 'draft' or not is_manager"
+                            help="Link lanes to departments, job positions or user groups with the same name."/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,review,published"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_versions" type="object" class="oe_stat_button" invisible="version_count &lt;= 1">
+                            <field name="version_count" widget="statinfo" string="Versions"/>
+                        </button>
+                        <button name="action_view_review_items" type="object" class="oe_stat_button" invisible="review_count == 0 or not is_manager">
+                            <field name="review_count" widget="statinfo" string="To Review"/>
+                        </button>
+                        <button name="action_export_bpmn" type="object" class="oe_stat_button" string="BPMN"/>
+                        <button name="action_export_drawio" type="object" class="oe_stat_button" string="draw.io"/>
+                    </div>
+                    <widget name="web_ribbon" title="Deprecated" bg_color="text-bg-secondary"
+                            invisible="state != 'deprecated'"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger"
+                            invisible="active"/>
+                    <field name="active" invisible="1"/>
+                    <field name="is_manager" invisible="1"/>
+                    <field name="is_latest_version" invisible="1"/>
+                    <field name="diagram_preview" invisible="1"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="e.g. Return of rejected goods"
+                                   readonly="state != 'draft' or not is_manager"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="code" placeholder="e.g. SCM-07"
+                                   readonly="state != 'draft' or not is_manager"/>
+                            <field name="version" readonly="state != 'draft' or not is_manager"/>
+                            <field name="category" readonly="state != 'draft' or not is_manager"/>
+                        </group>
+                        <group>
+                            <field name="owner_id" readonly="not is_manager"/>
+                            <field name="parent_id" readonly="not is_manager"/>
+                            <field name="company_id" groups="base.group_multi_company"
+                                   readonly="not is_manager"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Diagram" name="diagram">
+                            <field name="bpmn_xml" widget="bpmn_editor" nolabel="1" colspan="2"
+                                   readonly="state != 'draft' or not is_manager"/>
+                        </page>
+                        <page string="Description" name="description">
+                            <field name="description" nolabel="1"
+                                   readonly="state != 'draft' or not is_manager"
+                                   placeholder="Purpose, scope, inputs and outputs, KPIs..."/>
+                        </page>
+                        <page string="Elements" name="elements">
+                            <field name="element_ids" nolabel="1" readonly="1">
+                                <list>
+                                    <field name="element_group"/>
+                                    <field name="name"/>
+                                    <field name="lane_name" optional="show"/>
+                                    <field name="responsible_name" optional="show"/>
+                                    <field name="link_count" optional="show"/>
+                                    <field name="review_status" widget="badge"
+                                           decoration-warning="review_status == 'pending'"
+                                           decoration-success="review_status == 'none'"/>
+                                    <field name="review_reason" optional="show"/>
+                                    <field name="element_type" optional="hide"/>
+                                    <field name="element_id" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Version" name="version">
+                            <group>
+                                <group>
+                                    <field name="root_id"/>
+                                    <field name="previous_version_id"/>
+                                </group>
+                                <group>
+                                    <field name="published_date"/>
+                                    <field name="published_by_id"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="business_process_view_list" model="ir.ui.view">
+        <field name="name">business.process.list</field>
+        <field name="model">business.process</field>
+        <field name="arch" type="xml">
+            <list string="Business Processes" decoration-muted="state == 'deprecated'">
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="version"/>
+                <field name="category"/>
+                <field name="parent_id" optional="show"/>
+                <field name="owner_id" widget="many2one_avatar_user" optional="show"/>
+                <field name="published_date" optional="hide"/>
+                <field name="review_count" optional="show" string="To Review"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                <field name="state" widget="badge" decoration-info="state == 'draft'"
+                       decoration-warning="state == 'review'" decoration-success="state == 'published'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="business_process_view_kanban" model="ir.ui.view">
+        <field name="name">business.process.kanban</field>
+        <field name="model">business.process</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="category" class="o_bpmn_process_kanban" sample="1">
+                <field name="state"/>
+                <field name="review_count"/>
+                <field name="diagram_preview"/>
+                <templates>
+                    <t t-name="card">
+                        <div t-if="record.diagram_preview.raw_value" class="o_bpmn_kanban_preview">
+                            <field name="diagram_preview" widget="image"
+                                   options="{'img_class': 'o_bpmn_kanban_img'}"/>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-1">
+                            <field name="code" class="text-muted small"/>
+                            <field name="name" class="fw-bold fs-5"/>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 small">
+                            <span>v<field name="version"/></span>
+                            <field name="state" widget="label_selection"
+                                   options="{'classes': {'draft': 'info', 'review': 'warning', 'published': 'success', 'deprecated': 'default'}}"/>
+                            <span t-if="record.review_count.raw_value" class="badge text-bg-warning">
+                                <span title="Items to review">!</span> <field name="review_count"/>
+                            </span>
+                        </div>
+                        <footer class="pt-1">
+                            <field name="parent_id" class="text-muted small"/>
+                            <field name="owner_id" widget="many2one_avatar_user" class="ms-auto"/>
+                        </footer>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="business_process_view_search" model="ir.ui.view">
+        <field name="name">business.process.search</field>
+        <field name="model">business.process</field>
+        <field name="arch" type="xml">
+            <search string="Business Processes">
+                <field name="name" filter_domain="['|', ('name', 'ilike', self), ('code', 'ilike', self)]"/>
+                <field name="element_ids" string="Diagram Element"
+                       filter_domain="[('element_ids.name', 'ilike', self)]"/>
+                <field name="element_ids" string="Responsible (lane)"
+                       filter_domain="['|', ('element_ids.responsible_name', 'ilike', self), ('element_ids.lane_name', 'ilike', self)]"/>
+                <field name="owner_id"/>
+                <field name="parent_id"/>
+                <filter name="published" string="Published" domain="[('state', '=', 'published')]"/>
+                <filter name="in_progress" string="Draft / In Review" domain="[('state', 'in', ('draft', 'review'))]"/>
+                <filter name="deprecated" string="Deprecated" domain="[('state', '=', 'deprecated')]"/>
+                <separator/>
+                <filter name="to_review" string="Items to Review" domain="[('review_count', '>', 0)]"/>
+                <filter name="my" string="My Processes" domain="[('owner_id', '=', uid)]"/>
+                <separator/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_category" string="Process Type" context="{'group_by': 'category'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                    <filter name="group_parent" string="Parent Process" context="{'group_by': 'parent_id'}"/>
+                    <filter name="group_owner" string="Owner" context="{'group_by': 'owner_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="business_process_action_map" model="ir.actions.act_window">
+        <field name="name">Process Map</field>
+        <field name="res_model">business.process</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="search_view_id" ref="business_process_view_search"/>
+        <field name="context">{}</field>
+        <field name="domain">[('state', '=', 'published')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No published process yet</p>
+            <p>Process managers model processes in BPMN 2.0, or import them from draw.io,
+               Microsoft Visio, Camunda or Signavio, then publish them here for everyone.</p>
+        </field>
+    </record>
+
+    <record id="business_process_action_all" model="ir.actions.act_window">
+        <field name="name">All Processes</field>
+        <field name="res_model">business.process</field>
+        <field name="view_mode">list,kanban,form</field>
+        <field name="search_view_id" ref="business_process_view_search"/>
+        <field name="context">{'search_default_in_progress': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first process</p>
+            <p>Draw it with the BPMN editor or use <b>Import Diagram</b> for draw.io, Visio
+               and .bpmn files.</p>
+        </field>
+    </record>
+</odoo>
