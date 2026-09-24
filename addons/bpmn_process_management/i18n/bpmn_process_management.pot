@@ -1,0 +1,3681 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bpmn_process_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-24 12:46+0000\n"
+"PO-Revision-Date: 2026-09-24 12:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "\"%s\" was outside every pool and was moved into the nearest one."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "%(count)s diagram items are still flagged for review."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "%s (copy)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "%s elements selected"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "%s link(s)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "%s separate swimlanes were grouped into one pool."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "%s to review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "(no name)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "(unnamed lane)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "... and %s more."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "A link points to something that no longer exists."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "A process cannot be its own parent."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "A process with this code and version already exists."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "A responsible was matched automatically by name. Confirm it."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.constraint,message:bpmn_process_management.constraint_business_process_tag_name_uniq
+msgid "A tag with this name already exists."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Activate create/remove space tool"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Activate global connect tool"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Activate hand tool"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Activate lasso tool"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__active
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__active
+msgid "Active"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Ad-hoc sub-process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Ad-hoc sub-process (collapsed)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Ad-hoc sub-process (expanded)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Add a link"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Add lane above"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Add lane below"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Add link"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Add text annotation"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__review_interval
+msgid ""
+"After publication, the owner gets a to-do to check the process again. 0 = "
+"never."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Align bottom"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Align centers"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements bottom"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements center"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements left"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements middle"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements right"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Align elements top"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Align left"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Align middles"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Align right"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Align top"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_action_all
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_all
+msgid "All Processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__pages__all
+msgid "All pages (one process per page)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Append an element after the selected one"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append compensation activity"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append conditional intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append element"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append intermediate/boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append message intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append receive task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append signal intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Append timer intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Archived"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Arrange"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_reason__responsible_missing
+msgid "Assign a department / role"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Assign a department, job position or user group to this lane."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Association"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_kanban
+msgid "BPMN"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "BPMN 2.0"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "BPMN 2.0 (.bpmn)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__bpmn_xml
+msgid "BPMN 2.0 XML"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_field.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "BPMN Diagram"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__element_id
+msgid "BPMN ID"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__element_type
+msgid "BPMN Type"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Back to Draft"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Before"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model,name:bpmn_process_management.model_business_process
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Business Process"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model,name:bpmn_process_management.model_business_process_element
+msgid "Business Process Element"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model,name:bpmn_process_management.model_business_process_kpi
+msgid "Business Process Indicator"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model,name:bpmn_process_management.model_business_process_ack
+msgid "Business Process Read Confirmation"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model,name:bpmn_process_management.model_business_process_tag
+msgid "Business Process Tag"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:res.groups.privilege,name:bpmn_process_management.res_groups_privilege_process
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_list
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Business Processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.actions.server,name:bpmn_process_management.ir_cron_process_review_reminder_ir_actions_server
+msgid "Business Processes: periodic review reminders"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Business rule task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Call activity"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_import_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Cancel boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Cancel end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Change element"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Change the type of the selected element"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Change type"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_reason__imported
+msgid "Check after import"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid ""
+"Check that the process still matches reality; create a new version if "
+"something changed."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_reason__type_guessed
+msgid "Check the element type"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Check this element after import."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid ""
+"Click a step to read what has to be done, who does it and open the related "
+"Odoo screen."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid ""
+"Click a task to read its work instruction and open the related Odoo screen."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Close"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Close menus, leave full screen"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Close minimap"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Collection"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__color
+msgid "Color"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Comment"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__company_id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__company_id
+msgid "Company"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Compensation boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Compensation end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Compensation intermediate throw event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Compensation start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Complex gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Conditional boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Conditional boundary event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Conditional flow"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Conditional intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Conditional start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Conditional start event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_config
+msgid "Configuration"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Confirm that you have read and understood this version."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_reason__responsible_auto
+msgid "Confirm the automatic match"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Connect to other element"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Connect tool"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Connect using association"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Connect using data input association"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Connection"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Connector \"%s\" is not attached to shapes at both ends and was skipped."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Connector \"%s\" links a pool to itself and was skipped."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Connector \"%s\" links shapes that BPMN cannot connect and was skipped."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Connector \"%s\" starts and ends on the same shape and was skipped."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Control"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Copy"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__category__core
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__category__core
+msgid "Core (Operational)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Create a new version to edit."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_tag_action
+msgid "Create a tag"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Create an element (with search)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create business rule task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create call activity"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create collapsed sub-process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create data object reference"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create data store reference"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create element"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create error end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create event-based gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create expanded sub-process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create group"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create inclusive gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create intermediate/boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create manual task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create message end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create message intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create message start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__mode__new
+msgid "Create new process(es)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create parallel gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create pool/participant"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create receive task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create send task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create service task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create terminate end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create text annotation"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create timer intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create timer start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Create user task"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_action_all
+msgid "Create your first process"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__create_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__create_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__create_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__create_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__create_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Created from version %s."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__create_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__create_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__create_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__create_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__create_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:business.process.tag,name:bpmn_process_management.demo_tag_customer
+msgid "Customer facing"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__customer
+msgid "Customers"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_kpi__frequency__daily
+msgid "Daily"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Dashed connector \"%s\" inside one pool was converted to a sequence flow."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__data
+msgid "Data"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__source
+msgid "Data Source"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Data object must be placed within a pool/participant."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Data object reference"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Data store reference"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__date
+msgid "Date"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Default"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Default flow"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Delete"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Delete the selection"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Deprecate"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__state__deprecated
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Deprecated"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Description"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Details"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Diagram"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Diagram Element"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__diagram_preview
+msgid "Diagram Preview"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__display_name
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__display_name
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__display_name
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__display_name
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__display_name
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Distribute elements horizontally"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Distribute elements vertically"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Distribute horizontally"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Distribute vertically"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Divide into three lanes"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Divide into two lanes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__documentation
+msgid "Documentation"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid ""
+"Double-click a shape to edit its text; use the side panel for colors and "
+"details."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Download"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Draft / In Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+msgid "Draft Processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Drag"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Drag a shape from the palette on the left, or press N to search one."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Draw"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_action_all
+msgid ""
+"Draw it with the BPMN editor or use <b>Import Diagram</b> for draw.io, Visio\n"
+"               and .bpmn files."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Drawing tips"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Edit"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Edit the text (or double-click)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Editing"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__element_group
+msgid "Element"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__element_count
+msgid "Element Count"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__element_ids
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Elements"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__ack_required
+msgid "Employees are asked to confirm they have read the published version."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Empty pool/participant"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Empty pool/participant (removes content)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "End event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Error boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Error end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Error start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Escalation boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Escalation boundary event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Escalation end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Escalation intermediate throw event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Escalation start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Escalation start event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__event
+msgid "Event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid ""
+"Event \"%s\" is not attached to a task border; imported as an intermediate "
+"event."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Event based instantiating Gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Event sub-process"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__trigger
+msgid "Event that starts the process, e.g. \"Customer asks for a return\"."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Event-based gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Events"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Exclusive gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Expanded pool/participant"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Export failed: %s"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__file
+msgid "File"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__filename
+msgid "Filename"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Fill"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Find a step"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Find a step, role or document..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Find an element"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__root_id
+msgid "First Version"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__pages__first
+msgid "First page only"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Fit diagram to screen"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Fit to screen"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_reason__link_broken
+msgid "Fix the broken link"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Flow"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__frequency
+msgid "Frequency"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "From"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Full screen"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__gateway
+msgid "Gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Gateways"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Go to the next item to review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Go to the start"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Gray"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Green"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Grid"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Group"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Hand tool"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__parent_id
+msgid "Higher-level process in the process architecture."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid ""
+"Hover a shape and use its arrow to connect: the shapes you may connect to "
+"light up."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "I have read it"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__id
+msgid "ID"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:business.process.tag,name:bpmn_process_management.demo_tag_iso
+msgid "ISO 9001"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Image"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Image (.png)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Image (.svg)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_import_view_form
+msgid "Import"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_import_action
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_import
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_import_view_form
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Import Diagram"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model,name:bpmn_process_management.model_business_process_import
+msgid "Import a process diagram"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_element_action_review
+msgid ""
+"Imported diagrams flag lanes without a department or role, shapes whose BPMN\n"
+"               type was guessed and links to check. They appear here until a process manager\n"
+"               marks them as reviewed in the diagram editor."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Imported from %(format)s file \"%(file)s\"."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Imported process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Imported processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__state__review
+msgid "In Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Inclusive gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__name
+msgid "Indicator"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__kpi_ids
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Indicators (KPI)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__process_input
+msgid "Inputs"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Inputs and outputs"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Intermediate throw event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Invalid BPMN diagram: %s"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__is_acknowledged
+msgid "Is Acknowledged"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__is_latest_version
+msgid "Is Latest Version"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__is_manager
+msgid "Is Manager"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__review_count
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Items to Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_kanban
+msgid "Items to review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_kanban
+msgid "L"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__level__0
+msgid "L0 - Value chain / category"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__level__1
+msgid "L1 - Process group"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__level__2
+msgid "L2 - Process"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__level__3
+msgid "L3 - Sub-process"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__level__4
+msgid "L4 - Activity / procedure"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Label"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Label (e.g. Yes / No)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Label (optional)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__lane_name
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__lane
+msgid "Lane"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Lane name follows the responsible"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Lane: "
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+msgid "Lanes and Pools"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid ""
+"Lanes: %(matched)s matched automatically (please confirm), %(missing)s need "
+"a department or role."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Lasso tool: select several elements"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__write_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__write_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__write_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__write_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__write_uid
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__write_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__write_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__write_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__write_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__write_date
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__company_id
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_element__company_id
+msgid "Leave empty to share the process with all companies."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__level
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Level"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__level
+msgid ""
+"Level in the process architecture: from the value chain (L0) down to the "
+"detailed procedure (L4)."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Line"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Line and text"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Link"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Link \"%s\" between data objects was imported as an association."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Link intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Link intermediate throw event"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_import__match_responsibles
+msgid ""
+"Link lanes to departments, job positions or user groups having exactly the "
+"same name. Every lane is flagged for review either way."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid ""
+"Link lanes to departments, job positions or user groups with the same name."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__link_count
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__link_count
+msgid "Links"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Loading diagram..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Loop"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__category__management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__category__management
+msgid "Management"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Manual task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Mark as reviewed"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Match Lanes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__match_responsibles
+msgid "Match lanes automatically"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message boundary event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message flow"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message intermediate throw event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Message start event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Minimap"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__mode
+msgid "Mode"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:res.groups,comment:bpmn_process_management.group_process_manager
+msgid "Models, versions, reviews and publishes processes."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_kpi__frequency__monthly
+msgid "Monthly"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Move the canvas (drag the empty background)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Move the selection (Shift: faster)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "My Processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__name
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_tag__name
+msgid "Name"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Navy"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "New Major Version"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "New Version"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Next"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__next_review_date
+msgid "Next Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "No instruction yet."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "No link."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_action_map
+msgid "No published process yet"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "No result."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Not assigned."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__review_note
+msgid "Note"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_element_action_review
+msgid "Nothing to review"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_status__none
+msgid "OK"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Odoo menu"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Only Process Managers can do this."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Only draft processes can be replaced."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid ""
+"Only draft versions can be edited. \"%(name)s\" is %(state)s: create a new "
+"version to change it."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Only drafts can be modified."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Only drafts can be submitted for review."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Only drafts or versions in review can be published."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Only published processes can be confirmed."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Only versions in review can go back to draft."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_list
+msgid "Open"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Open in Odoo"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Open minimap"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Open the user guide"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Open {element}"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Orange"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__process_output
+msgid "Outputs"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Owner"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__pages
+msgid "Pages"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Parallel Event based instantiating Gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Parallel gateway"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Parallel multi-instance"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__parent_id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__parent_id
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Parent Process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Participant multiplicity"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Participants"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Paste"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Periodic process review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__pool_name
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__pool
+msgid "Pool"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Pool: "
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Press ? to see all keyboard shortcuts."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Press A on a selected shape to append the next step right after it."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__previous_version_id
+msgid "Previous Version"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__process_id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__process_id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__process_id
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__process_id
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_ack_view_search
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+msgid "Process"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Process Card"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__code
+msgid "Process Code"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_list
+msgid "Process Elements"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:res.groups,name:bpmn_process_management.group_process_manager
+msgid "Process Manager"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_action_map
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_map
+msgid "Process Map"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__name
+msgid "Process Name"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__owner_id
+msgid "Process Owner"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_tag_action
+msgid "Process Tags"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__category
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_import__category
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Process Type"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_action_map
+msgid ""
+"Process managers model processes in BPMN 2.0, or import them from draw.io,\n"
+"               Microsoft Visio, Camunda or Signavio, then publish them here for everyone."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Process overview"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_root
+msgid "Processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Publish"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__state__published
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Published"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__published_by_id
+msgid "Published By"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__published_date
+msgid "Published Date"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Publishing replaces the currently published version. Continue?"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Purple"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__description
+msgid "Purpose & Description"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Purpose, scope, inputs and outputs, KPIs..."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_kpi__frequency__quarterly
+msgid "Quarterly"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Read"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__ack_required
+msgid "Read Confirmation"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_ack_action
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__ack_ids
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_acks
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_ack_view_list
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_ack_view_search
+msgid "Read Confirmations"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__ack_count
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Read by"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Read only"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:res.groups,comment:bpmn_process_management.group_process_user
+msgid "Reads published processes and their work instructions."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Receive task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Record"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Red"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Redo"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Refund, credit note, restocked product..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Remove"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Remove the responsible"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__mode__replace
+msgid "Replace the diagram of a draft process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Replace: search a department, job position or group..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Reset colors"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Reset zoom to 100%"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_element_action_all
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_responsibilities
+msgid "Responsibilities"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_element__responsible_inherited
+msgid "Responsibility comes from the lane."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid ""
+"Responsibility matching: %(matched)s matched, %(missing)s without a match."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__responsible_name
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+msgid "Responsible"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Responsible (lane)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__responsible_inherited
+msgid "Responsible Inherited"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__responsible_model
+msgid "Responsible Model"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__responsible_res_id
+msgid "Responsible Record"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Responsible: "
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Return form, invoice, product..."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Review Due"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__review_interval
+msgid "Review Every (months)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.actions.act_window,name:bpmn_process_management.business_process_element_action_review
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_review
+msgid "Review Queue"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__review_status
+msgid "Review Status"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Role or comment, e.g. \"the shift manager approves\""
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Roles"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Save"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Save the process first."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Saved"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Script task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Search a department, job position or group..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Search in diagram"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Search..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid ""
+"Select a shape to edit its instructions, links and responsible department."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Select all"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "Select the draft process to update."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Selection"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Send it back to draft to edit."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Send task"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__sequence
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Sequence flow"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Sequential multi-instance"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Service task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Set color"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__code
+msgid "Short reference, e.g. SAL-03. Kept across versions."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid ""
+"Shortcuts work when the diagram has the focus: click on the canvas first."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Show or hide the grid"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Show or hide the side panel"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Show the lane"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Show this help"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Side panel"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal boundary event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal intermediate throw event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Signal start event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Space tool: make or remove room"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Start and scope"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__state
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__process_state
+msgid "State"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_search
+msgid "Status"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Steps"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Style"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__subprocess
+msgid "Sub-process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Sub-process (collapsed)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Sub-process (expanded)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__child_ids
+msgid "Sub-processes"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Submit for Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__supplier
+msgid "Suppliers"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_import_view_form
+msgid ""
+"Supported files: <b>.bpmn</b> (Camunda, Signavio, bpmn.io, Bizagi...),\n"
+"                    <b>.drawio / .xml / .svg / .png</b> exported from draw.io with the diagram\n"
+"                    included, and <b>.vsdx</b> (Microsoft Visio 2013 or later).\n"
+"                    Converted diagrams are flagged for review: lanes need a department or role,\n"
+"                    guessed shapes should be checked."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process__category__support
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_import__category__support
+msgid "Supporting"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__tag_ids
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_tags
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_tag_view_list
+msgid "Tags"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.actions.act_window,help:bpmn_process_management.business_process_tag_action
+msgid ""
+"Tags group processes across the hierarchy, e.g. ISO 9001, Customer facing, "
+"Critical."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Tags..."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_kpi__target
+msgid "Target"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_kpi__target
+msgid "Target value, e.g. \">= 95 %\"."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__element_group__task
+msgid "Task"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+msgid "Tasks"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Teal"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Templates"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Terminate end event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Text annotation"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "The BPMN type of this shape was guessed during import. Check it."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "The diagram could not be displayed: %s"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "The diagram had no layout and was arranged automatically."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "The diagram library could not be loaded."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "The file could not be imported: %s"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid ""
+"The file could not be imported: it is damaged or uses an unsupported variant"
+" of the format."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid ""
+"The file has no diagram layout; it will be laid out automatically when "
+"opened."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "The file is empty."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid "The file is larger than 25 MB."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "The linked action no longer exists."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "The linked document no longer exists."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "The linked menu does not exist or you cannot access it."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "The linked menu has no action."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "The linked record no longer exists or is not accessible."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid ""
+"The status changes only through the buttons (Submit for Review, Publish, "
+"...)."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "This link is broken or not accessible."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "This link is not allowed: %s"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.constraint,message:bpmn_process_management.constraint_business_process_ack_process_user_version_uniq
+msgid "This version was already confirmed."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Timer boundary event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Timer boundary event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Timer intermediate catch event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Timer start event"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Timer start event (non-interrupting)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "To"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_element__review_status__pending
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_list
+msgid "To Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "To review"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "To review (%s)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Toggle non-interrupting"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Transaction"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__trigger
+msgid "Trigger"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Type"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Undo"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/wizard/business_process_import.py:0
+msgid ""
+"Unsupported file. Use a .bpmn (BPMN 2.0), .drawio / .xml / .svg / .png "
+"(draw.io) or .vsdx (Visio) file."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Use \"%s\" as lane name"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Use an address starting with https://, http://, mailto: or /"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__user_id
+msgid "User"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.actions.act_url,name:bpmn_process_management.action_bpmn_user_guide
+#: model:ir.ui.menu,name:bpmn_process_management.menu_process_guide
+msgid "User Guide"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "User guide"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "User task"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__version
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_ack__version
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_ack_view_search
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Version"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Version %(version)s was published."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+msgid "Version %s is already being prepared. Finish or delete it first."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Version & Review"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__version_count
+msgid "Version Count"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-python
+#: code:addons/bpmn_process_management/models/business_process.py:0
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "Versions"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "View"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:res.groups,name:bpmn_process_management.group_process_user
+msgid "Viewer"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Walk through the process"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Web address (URL)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_kpi__frequency__weekly
+msgid "Weekly"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "What has to be done, rules, controls, documents..."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid ""
+"What has to be done, rules, controls, documents...\n"
+"- start a line with - for a bullet list"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_kpi__name
+msgid "What is measured, e.g. \"Returns refunded within 5 days\"."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process_element__review_reason
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_element_view_search
+msgid "What to do"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_kpi__source
+msgid "Where the value comes from (Odoo report, spreadsheet...)."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Who"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Who does what"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__supplier
+msgid "Who provides the inputs."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__customer
+msgid "Who receives the result of the process."
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Window action (technical)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Work instruction"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields.selection,name:bpmn_process_management.selection__business_process_kpi__frequency__yearly
+msgid "Yearly"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Yellow"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Zoom"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Zoom in"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "Zoom in / out (or mouse wheel with Ctrl)"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "Zoom out"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "attached to"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "draw.io"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "draw.io (.drawio) - last saved version"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "draw.io (last saved version)"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process_import__pages
+msgid "draw.io and Visio files can contain several pages."
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "e.g. A customer asks to return a product"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "e.g. Customer, accounting"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "e.g. Customer, carrier"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "e.g. Return of rejected goods"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_form
+msgid "e.g. SCM-07"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "exception"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "flow elements must be children of pools/participants"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "message"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "no Odoo responsible assigned"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_terms.js:0
+msgid "not assigned"
+msgstr ""
+
+#. module: bpmn_process_management
+#. odoo-javascript
+#: code:addons/bpmn_process_management/static/src/bpmn_field/bpmn_app.js:0
+msgid "otherwise"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model_terms:ir.ui.view,arch_db:bpmn_process_management.business_process_view_kanban
+msgid "v"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,field_description:bpmn_process_management.field_business_process__activity_plans_ids
+msgid "Activity Plans"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.module.module,shortdesc:base.module_bpmn_process_management
+msgid "BPMN Process Management"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.model.fields,help:bpmn_process_management.field_business_process__activity_type_icon
+msgid "Material Symbols icon e.g. checklist"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:res.groups.privilege,placeholder:bpmn_process_management.res_groups_privilege_process
+msgid "No"
+msgstr ""
+
+#. module: bpmn_process_management
+#: model:ir.module.module,summary:base.module_bpmn_process_management
+msgid ""
+"Process repository, BPMN 2.0 modeler/viewer and knowledge hub (import from "
+"draw.io, Visio, Camunda, Signavio)"
+msgstr ""
